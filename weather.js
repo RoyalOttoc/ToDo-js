@@ -12,8 +12,9 @@ function getWeather(lat, lon) {
     })
     .then(function (json) {
       const temperature = json.current.temp;
+      const splitTemp = temperature.toString().split('.')
       const place = json.timezone;
-      weather.innerText = `${temperature} @ ${place}`;
+      weather.innerText = `${splitTemp[0]} degrees  @ ${place}`;
     });
 }
 // function saveCoords() {

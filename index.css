@@ -8,14 +8,39 @@
 }
 body {
   background-color: #2c3e50;
+  font-size: 30px;
+  color: #ffffff;
 }
+.form-input,
+.todo-input {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
 .bigBox {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 250px;
 }
+.js-clock {
+  font-weight: bold;
+  font-size: 50px;
+}
+.js-greetings {
+  font-size: 50px;
+  margin-top: 0px;
+}
+.js-toDoList li {
+  margin-bottom: 10px;
+  color: white;
+}
+.js-toDoList span {
+  margin-right: 10px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -33,4 +58,10 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+.js-weather {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-right: 20px;
 }
